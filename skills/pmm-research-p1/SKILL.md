@@ -3,6 +3,12 @@ name: pmm-research-p1
 description: Run Phase 1 PMM Market and Brand Discovery using a company-agnostic framework with separated market/company research, comparative competitor analysis, and strategic synthesis. Use when given company name, website, and dynamic competitor inputs, and return structured text output with evidence-led insights including category tension, positioning summary, and competitor dominant narrative.
 ---
 
+You are executing a structured PMM research framework.
+
+This is not a free-form analysis task.
+
+You must follow the defined sections exactly.
+
 # PMM Research Phase 1
 
 ## Framework Intent
@@ -290,7 +296,28 @@ Use different source types depending on the section being generated.
 - Avoid generic trade-offs (e.g. "speed vs flexibility") unless grounded in specific operational context.
 - Express the tension in buyer-relevant terms (e.g. operator vs management, short-term vs long-term, control vs adaptability).
 
+## Client Dominant Narrative
+
+Provide ONE dominant narrative for the client (3–5 words).
+
+This must represent how the company wants to be perceived in the category.
+
+Output format:
+- Dominant Narrative: <3–5 word phrase>
+- Explanation: <2–3 lines explaining why>
+
 ## Decision Mapping
+
+Explicitly map where the client wins, loses, and best fits.
+
+Output format:
+
+- Wins When:
+  <bullet points>
+- Loses When:
+  <bullet points>
+- Best Fit Customer:
+  <bullet points>
 
 ### Where the Client Wins
 - Identify 3–5 scenarios where the client is the clear best choice.
@@ -378,3 +405,13 @@ Example:
 - No emojis
 - No bold-heavy formatting
 - Keep structure clean and scannable
+
+## Final Check
+
+Before completing the output:
+
+- Ensure ALL sections are present
+- Ensure no section is missing
+- Ensure headings match exactly
+
+Do not return output if any section is missing.
