@@ -342,6 +342,7 @@ Confidence Level should be applied for:
 - Challenges
 - Opportunities
 - Trends
+
 - For key insights, indicate:
   - High confidence (clear evidence)
   - Medium (inference)
