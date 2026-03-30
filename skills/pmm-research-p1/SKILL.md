@@ -312,11 +312,11 @@ Explicitly map where the client wins, loses, and best fits.
 
 Output format:
 
-- Wins When:
+### Wins When:
   <bullet points>
-- Loses When:
+### Loses When:
   <bullet points>
-- Best Fit Customer:
+### Best Fit Customer:
   <bullet points>
 
 ### Where the Client Wins
