@@ -337,6 +337,11 @@ Output format:
 
 ## Confidence Level
 
+Confidence Level should be applied for:
+- Market Overview
+- Challenges
+- Opportunities
+- Trends
 - For key insights, indicate:
   - High confidence (clear evidence)
   - Medium (inference)

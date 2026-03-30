@@ -1,325 +1,152 @@
----
-name: pmm-research-phase1
-description: Run Phase 1 PMM Market and Brand Discovery using a company-agnostic framework with separated market/company research, comparative competitor analysis, and strategic synthesis. Use when given company name, website, and dynamic competitor inputs, and return structured text output with evidence-led insights including category tension, positioning summary, and competitor dominant narrative.
----
+## Market Overview
 
-# PMM Research Phase 1
+- The dominant market dynamic is the shift from single-turn copilots to persistent execution agents that can plan, act, and finish multi-step desktop and browser work with minimal supervision.
+- Adoption pressure is real: McKinsey reports 78% of organizations now use AI in at least one function and 71% regularly use gen AI in at least one function, pushing buyers to evaluate execution quality rather than chatbot quality.
+- Scaling friction is equally real: Deloitte reports more than two-thirds of surveyed leaders expect 30% or fewer GenAI experiments to scale in the next three to six months, so teams are prioritizing reliability, control, and measurable ROI over demos.
+- Practical implication for strategy: winners in this category must prove dependable task completion, governance, and predictable economics in production workflows, not just impressive benchmark or prompt-level performance.
 
-## Framework Intent
-Use this as a reusable PMM Market and Brand Discovery Framework (Phase 1).
-Apply it across industries, business models, and maturity stages.
-Produce a detailed internal working board that can directly feed Phase 2 (persona, pains, desired outcomes, alternatives) and Phase 3 (positioning).
+## Challenges
 
-## Required Inputs
-Collect these inputs before analysis:
-- `company_name` (string)
-- `website` (string URL)
-- `competitors` (array of competitor names; dynamic length)
+- [High confidence] Execution reliability gap: operators need agents that can recover from UI drift, auth interruptions, and long-horizon workflows without constant babysitting.
+- [High confidence] Production-readiness gap: many teams can pilot quickly but cannot scale due to risk, governance, and workflow integration constraints.
+- [Medium confidence] Trust and control tension: users want autonomy, but still need approval gates and transparent action logs for critical operations.
+- [High confidence] ROI proof burden: AI budgets are growing, but buyers increasingly require function-level outcomes (time saved, error reduction, throughput) before expanding deployment.
+- [Medium confidence] Channel and tool fragmentation: work spans desktop GUIs, browser tools, APIs, and messaging surfaces, making orchestration complexity a buying blocker.
 
-If any required input is missing, request it before proceeding.
+## Opportunities
 
-## Output Contract (Text Only)
-Return structured plain text only.
-Do not output JSON, code fences, or metadata.
-Use this output order:
+- [High confidence] Own “reliable execution” positioning for desktop-heavy workflows where API-first automation fails.
+- [High confidence] Package agent deployment as workflow outcomes by function (ops, IT, back-office), not as generic autonomous-agent access.
+- [Medium confidence] Win trust-sensitive buyers with explicit guardrails, human approval checkpoints, and auditable action trails.
+- [Medium confidence] Differentiate through cross-surface continuity: browser + desktop + mobile + terminal in one operating model.
+- [High confidence] Monetize enterprise readiness (security controls, governance, support, and deployment flexibility) as a premium layer.
 
+## Trends
 
-1. Market Overview
-2. Challenges
-3. Opportunities
-4. Trends
-5. Client Company
-6. Vision
-7. Goals
-8. USP
-9. Positioning
-10. Competitors
-11. Key Trade-off (Category Tension)
-12. Positioning Summary
-13. Gaps
-14. Non-Ideal Customer
-15. Strategic Opportunities
-16. Sources Used
+- [High confidence] Agentic AI investment is rising, but Gartner predicts over 40% of agentic AI projects will be canceled by end-2027 due to cost, unclear value, or weak controls.
+- [High confidence] Vendor noise is increasing: Gartner flags “agent washing,” where assistants and legacy automation are rebranded as agents.
+- [High confidence] Enterprise penetration is accelerating: Gartner projects strong growth of agent capabilities embedded in enterprise apps through 2026-2028.
+- [High confidence] Economic signal is strengthening: PwC reports AI-linked productivity and wage-premium effects, increasing executive pressure to operationalize AI.
+- [Medium confidence] Buying center is shifting from innovation teams to operations owners who care about predictability, governance, and workflow fit.
 
-For competitors, use one subsection per competitor in the input order with:
-- Name
-- Target Audience
-- Value Prop
-- Messaging
-- Positioning
-- Dominant Narrative
+## Client Company
 
-## Output Depth Requirements
-- Do not overly condense outputs.
-- Write with enough detail to support downstream ICP, segmentation, messaging, and positioning work.
-- `Challenges`, `Opportunities`, `Trends`, `Gaps`, and `Strategic Opportunities` must each contain 3-6 items.
-- Each item may be 1-3 sentences where needed for strategic clarity.
-- Avoid generic phrasing; include concrete user behaviors, segments, trigger moments, and implications.
-- All insights must be specific and actionable
-- Avoid vague phrases such as "improve", "enhance", "build stronger"
-- Each point must clearly indicate:
-  - who (persona or segment)
-  - what (problem or use case)
-  - why it matters
+- Simular AI positions itself as “The Autonomous Computer Company,” with a research-to-product narrative built around computer-use agents.
+- Product surface centers on Sai/Simular Pro: an always-on AI co-worker model operating in a private remote desktop with approval-based guardrails.
+- Commercial packaging spans Plus, Pro, and Enterprise tiers, signaling a path from individual builders to compliance-heavy organizations.
 
-## Framework Alignment Thinking
-Ensure each section is immediately reusable for later phases:
-- `Challenges` should imply persona pains and frictions.
-- `Opportunities` should imply desired outcomes and value priorities.
-- `Competitors` should imply customer alternatives and switching logic.
-- `Gaps` should imply positioning whitespace in the category.
-- `Positioning`, `Positioning Summary`, and `Category Tension` should provide raw material for a final positioning statement.
+## Vision
 
-## Workflow
-Execute the workflow in order.
-Use verifiable evidence from official pages, product and pricing pages, documentation, investor materials, and credible market sources.
-If evidence is weak, mark it as a careful inference instead of stating certainty.
+Simular’s stated vision is to free people from repetitive computer work by making research-driven AI agents usable in real workflows. The company frames long-term direction as building autonomous computers that act more like dependable digital teammates than chat interfaces.
 
-### Step 1: Market and Company Audit
-Run two distinct tracks and keep them separate in reasoning.
+## Goals
 
-#### 1A) Marketing Research
-Populate:
-- Market Overview
-- Challenges
-- Opportunities
-- Trends
+- Convert frontier computer-use research into production products that complete real desktop and browser workflows.
+- Prove cross-environment execution quality (browser, desktop, smartphone) to support category leadership claims.
+- Expand from solo-user automation into business and enterprise deployments with governance and security depth.
 
-Method:
-1. Identify the single most important market dynamic and state its practical implication in Market Overview.
-2. Identify key trigger moments that force evaluation or switching behavior.
-3. Map pain patterns by segment and buying context.
-4. Reframe source claims into strategic implications, not copy.
+## USP
 
-Field requirements:
-- Market Overview must highlight one dominant market dynamic and the implication for strategy.
-- Challenges must surface real pains and constraints, not broad category cliches.
-- Opportunities must point toward outcomes customers want but cannot reliably get today.
-- Trends must be decision-relevant and connected to changing buyer behavior.
+- Simular combines human-like GUI operation with API/terminal/code capabilities, reducing dependence on available public APIs.
+- Sai runs in a private remote workspace and emphasizes approval-based critical actions, strengthening trust for higher-stakes tasks.
+- Simular’s messaging tightly links benchmark performance and practical workflow automation, which supports a “research-backed execution” differentiator.
 
-#### 1B) Company Research
-Populate:
-- Vision
-- Goals
-- USP
-- Positioning
+## Positioning
 
-Method:
-1. Extract explicit strategic intent and implicit strategic direction.
-2. Translate product and feature claims into value mechanisms tied to user jobs.
-3. Clarify where the company chooses focus and what it deprioritizes.
-4. Express Positioning as one strong comparative statement.
+Simular is a research-led autonomous computer agent platform for teams that need reliable, guardrailed completion of desktop and browser workflows, not just conversational assistance.
 
-Field requirements:
-- Positioning must clearly differentiate the company versus alternatives in one sentence.
-- USP should emphasize concrete differentiators with user and business implications.
-- Use inference carefully when evidence is partial.
+## Client Dominant Narrative
 
-### Step 2: Comparative Competitor Analysis
-Do not analyze competitors in isolation.
-Always compare competitors against the focal company and each other.
+- Dominant Narrative: Research-grade autonomous execution
+- Explanation: Simular repeatedly ties its identity to frontier agent research and real workflow completion, emphasizing dependable action in live software environments rather than pure chat quality.
 
-Populate competitor sections with:
-- Name
-- Target Audience
-- Value Prop
-- Messaging
-- Positioning
-- Dominant Narrative
+## Competitors
 
-Internal structure requirements for each competitor:
-- Target Audience: include specific segment, behavior pattern, and underlying intent.
-- Value Prop: state the core problem solved and why this approach is preferred over alternatives.
-- Messaging: describe tone, narrative angle, and what is consistently emphasized.
-- Positioning: explain how the competitor wins versus alternatives.
-- Dominant Narrative: summarize the category claim in 3-5 words.
+### Manus AI
 
-Comparison rules:
-- Explicitly show how each competitor differs from others.
-- Keep narrative territories distinct and non-overlapping.
-- Tie messaging to audience and positioning logic.
+- Target Audience: Professionals and teams wanting an autonomous “virtual colleague” for multi-step tasks with minimal supervision.
+- Value Prop: Executes end-to-end tasks in a sandboxed virtual computer with persistent context and software-install capability.
+- Messaging: Outcome-first and delegation-heavy (“takes action,” “deliver complete work products”), with broad template-style use cases.
+- Positioning: General-purpose autonomous work agent optimized for breadth of task execution and low manual orchestration.
+- Dominant Narrative: Autonomous virtual colleague
 
-### Step 3: PMM Synthesis (Tension, Positioning, Gaps, Strategic Moves)
-Use direct comparisons from Step 2 to generate synthesis.
+### OpenClaw
 
-Populate:
-- Category Tension
-- Positioning Summary
-- Gaps
-- Strategic Opportunities
-- Non-Ideal Customer
+- Target Audience: Developers and power users who want a self-hosted personal AI assistant reachable from messaging channels.
+- Value Prop: Single self-hosted gateway connecting many chat channels to an always-available agent on user-controlled infrastructure.
+- Messaging: Open-source control, privacy, extensibility, and multi-channel convenience.
+- Positioning: DIY, infrastructure-controlled personal assistant stack for users prioritizing control and customization over managed enterprise UX.
+- Dominant Narrative: Self-hosted channel-native assistant
 
-Synthesis requirements:
-- Category Tension must capture a real strategic trade-off in the market.
-- Positioning Summary must:
-  - clearly state when the company wins
-  - specify what it is better at than alternatives
-  - clarify what it intentionally does NOT optimise for
-  - compare all major competitors and locate the focal company clearly
-- Focus on strategic insight, not descriptive recap.
+### ClaudeCode
 
-Gap logic (mandatory):
-- Define Gaps as whitespace in the market, not weaknesses of a specific competitor.
-- Derive Gaps from cross-competitor patterns, overlaps, and ignored demand signals.
-- Do not mention competitor names in Gaps.
-- Each gap should answer: "What positioning or narrative is currently not clearly owned?"
-- Focus on unmet needs, ignored segments, behavioral gaps, or unclear narratives.
-- Gaps must be tied to real customer needs, behaviours, or decision moments
-- Avoid abstract or generic whitespace statements
-- Each gap should be usable as a potential positioning angle
+- Target Audience: Software engineers and engineering teams focused on coding throughput inside terminal/IDE/dev workflows.
+- Value Prop: Agentic coding assistant that reads codebases, edits files, runs commands, and integrates with developer tooling.
+- Messaging: Practical software-delivery acceleration (build, fix, test, automate) with explicit security and permission controls.
+- Positioning: Developer-native coding agent specialized for software lifecycle execution rather than broad business desktop automation.
+- Dominant Narrative: Developer-native coding agent
 
-Strategic opportunity logic (mandatory):
-- Map each Strategic Opportunity directly to one or more identified Gaps.
-- Frame each item as a strategic move, not a generic recommendation.
-- Include implied trade-offs where relevant (what is gained and what is sacrificed).
-- Keep moves actionable for Phase 2 messaging development and Phase 3 positioning definition.
+## Key Trade-off (Category Tension)
 
-Non-ideal customer logic (mandatory):
-- Define who the product is NOT built for
-- Identify segments that would struggle with the product’s approach
-- Base this on trade-offs in positioning and product design
-- Avoid generic exclusions; be specific about behaviours, needs, or constraints
-- This should reinforce positioning clarity, not dilute it
+- The core category tension is autonomy breadth versus operational controllability.
+- Buyers can push for broader autonomous action across tools and contexts, or tighten governance, predictability, and approval boundaries for safer production rollout.
+- The strongest products make this trade-off explicit and configurable instead of pretending both sides can be fully maximized at once.
 
-## Validation Checklist
-Before final output, verify:
-- Output is plain text only and follows the required section order.
-- Competitor list is dynamic and reflects input length.
-- Challenges, Opportunities, Trends, Gaps, and Strategic Opportunities each have 3-6 items.
-- Market/company audit is separated from competitor analysis and synthesis.
-- Each competitor includes one clear Dominant Narrative in 3-5 words.
-- Market Overview contains one dominant market dynamic and implication.
-- Positioning is one strong differentiating statement versus alternatives.
-- Positioning Summary compares all competitors and clearly locates the company.
-- Category Tension reflects a real market trade-off.
-- Gaps are whitespace statements, pattern-derived, and contain no competitor names.
-- Strategic Opportunities map to Gaps and include strategic trade-offs where relevant.
+## Positioning Summary
 
-## Quality Rules
+Simular is strongest where teams need cross-surface computer-use execution with explicit guardrails and evidence of agentic depth. Manus currently frames the broadest autonomous delegation story for general knowledge-work outputs. OpenClaw is strongest for self-hosted, channel-driven personal assistant deployments where control and customization matter most. ClaudeCode dominates engineering-centric software workflows with deep coding ergonomics and toolchain fit. Simular wins when desktop/browser task execution quality and governable autonomy matter more than either pure developer coding depth or pure self-hosted flexibility.
 
-- Optimise for strategic usefulness, not brevity
-- Avoid generic language (e.g. "innovative", "seamless", "end-to-end")
-- Prefer specific segments, behaviours, and trigger moments
-- Each bullet should contain a clear insight, not vague description
-- Outputs should be usable to directly build ICP, messaging, and positioning
-- Do not simplify to presentation-level summaries
-- Maintain clarity but preserve nuance where it affects strategy
-- Every insight should be usable to inform a landing page, ICP definition, or messaging angle
-- If a point cannot be turned into a clear messaging angle, it is too vague
+## Gaps
 
-### Writing Style Rules
+- [High confidence] Governed autonomy for operations teams that need measurable workflow outcomes plus clear human override points.
+- [Medium confidence] Mid-market packaging that bridges solo experimentation and enterprise procurement without a steep operational jump.
+- [Medium confidence] Role-specific deployment playbooks that map agent behavior to repeatable function-level KPIs.
+- [Medium confidence] Cross-surface continuity with consistent policy controls across browser, desktop, and messaging interaction modes.
+- [Low confidence] Buyer education around “when to use full autonomy vs assisted execution” framed as a decision model, not a feature list.
 
-- Use simple, clear language
-- Avoid jargon (e.g. "convergence", "implication", "framework") unless necessary
-- Prefer concrete phrasing over abstract phrasing
-- Each bullet should be immediately understandable on first read
-- Write like explaining to a smart operator, not a consultant
+## Non-Ideal Customer
 
-Bad:
-"The strategic implication is that feature breadth is no longer enough"
+- Teams wanting fully unmanaged automation for high-risk workflows with zero human checkpoints.
+- Organizations with strict requirements for fully on-prem, fully self-hosted control and no vendor-managed remote workspace model.
+- Buyers seeking only coding-assistant depth inside IDE-first workflows rather than broader desktop/browser business execution.
+- Very low-volume users who can solve needs with lightweight scripts or single-app automations.
 
-Good:
-"Having more features is no longer enough to win"
+## Strategic Opportunities
 
-Bad:
-"Behavioural segmentation creates positioning pressure"
+- Launch a governance-first SKU narrative tied to auditable approvals, policy templates, and role-based operational controls.
+- Build function packs (ops, revops, support, finance workflows) with pre-defined success metrics and deployment playbooks.
+- Introduce a “scale bridge” plan between Pro and Enterprise that de-risks procurement for mid-market teams.
+- Publish explicit autonomy mode guides (assist, approve, delegate) with decision criteria by task criticality and compliance level.
+- Expand comparative proof assets showing repeatable production outcomes, not just benchmark wins, for target vertical workflows.
 
-Good:
-"Users split into two groups, making it harder to position clearly"
+## Decision Mapping
 
-## Output Formatting Rules
+- Wins When: The buyer has repetitive desktop/browser workflows with poor API coverage and needs reliable execution.
+- Wins When: The team values private workspace isolation and approval gates for critical actions.
+- Wins When: The champion wants research-backed differentiation plus practical deployment for operations use cases.
+- Loses When: The buyer primarily needs deep IDE-centric coding acceleration across large software codebases.
+- Loses When: The organization requires full self-hosting control and prefers assembling its own open-source agent stack.
+- Loses When: The use case is mostly lightweight chat/Q&A without meaningful multi-step execution demand.
+- Best Fit Customer: Operator-led teams (ops, IT, back-office) with high repetitive UI workload and measurable automation targets.
+- Best Fit Customer: Mid-size to enterprise organizations that need autonomy plus explicit governance controls.
+- Best Fit Customer: Teams willing to pay premium pricing for reliable workflow completion and reduced manual overhead.
 
-- Use Markdown formatting that renders cleanly across platforms (Notion, docs, markdown viewers)
+## Sources Used
 
-### Source Requirements
-
-Use different source types depending on the section being generated.
-
-#### Market Research (Market Overview, Challenges, Opportunities, Trends)
-
-- Prioritise independent, third-party sources that describe the market as a whole
-- Examples of acceptable sources:
-  - Industry analysis and reports
-  - Aggregated data platforms
-  - Reputable publications and media
-  - Regulatory or institutional sources (when relevant)
-  - Expert or operator perspectives (if credible)
-
-- Do NOT rely primarily on company or competitor websites for market-level insights
-- Use company sources only to support or illustrate a trend, not define it
-
-#### Company Research (Vision, Goals, USP, Positioning)
-
-- Use official company sources:
-  - Website (about, product, pricing)
-  - Documentation or product materials
-  - Public statements or materials
-
-#### Competitor Analysis
-
-- Use competitor websites as primary sources
-- Supplement with third-party perspectives if needed
-
-#### General Rules
-
-- Balance multiple perspectives when forming market-level conclusions
-- Do not derive market trends purely from competitor messaging
-- If external validation is limited, clearly state it as a directional inference
-- The main market dynamic must reflect a real shift in user behaviour, not just product changes
-
-### Section Structure
-
-- Use a single H1 (#) for the company name at the very top
-
-- Use H2 (##) for all main sections:
-  - Market Overview
-  - Challenges
-  - Opportunities
-  - Trends
-  - Client Company
-  - Vision
-  - Goals
-  - USP
-  - Positioning
-  - Competitors
-  - Key Trade-off
-  - Positioning Summary
-  - Gaps
-  - Strategic Opportunities
-  - Sources Used
-
-- Do NOT write section titles as plain text (e.g. "Market Overview:")
-- ALWAYS use proper Markdown headers
-
-### Competitor Formatting
-
-- Each competitor must use H3 (###) with the competitor name
-
-Example:
-### Endowus
-
-- Target Audience:
-- Value Prop:
-- Messaging:
-- Positioning:
-- Dominant Narrative:
-
-### Content Formatting
-
-- Use bullet points for all sections except:
-  - Vision
-  - Goals
-  - USP
-  - Positioning
-  - Positioning Summary
-  (these can be short paragraphs or bullets if needed)
-
-- Keep bullets concise (1–2 lines preferred)
-- Add one empty line after each header
-- Do not add unnecessary spacing between bullets
-
-### General Rules
-
-- No emojis
-- No bold-heavy formatting
-- Keep structure clean and scannable
+- https://www.simular.ai/
+- https://www.simular.ai/about
+- https://www.simular.ai/pricing
+- https://www.simular.ai/simular-pro
+- https://www.simular.ai/articles/agent-s2
+- https://manus.im/docs
+- https://manus.im/docs/introduction/plans
+- https://docs.openclaw.ai/
+- https://docs.openclaw.ai/start/getting-started
+- https://github.com/openclaw/openclaw
+- https://code.claude.com/docs/en/overview
+- https://code.claude.com/docs/en/security
+- https://code.claude.com/docs/en/costs
+- https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+- https://www2.deloitte.com/us/en/pages/about-deloitte/articles/press-releases/state-of-generative-ai.html
+- https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027
+- https://www.pwc.com/gx/en/news-room/press-releases/2025/ai-linked-to-a-fourfold-increase-in-productivity-growth.html
