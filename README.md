@@ -122,6 +122,11 @@ Use this when you need to:
 * You are expected to refine key sections (especially positioning and tension)
 * Quality depends on input clarity and competitor selection
 
+## Samples
+
+View: simular-ai.md
+Notion Document: https://www.notion.so/Simular-AI-3334065f433d8124a255f01e879a5d4a?source=copy_link
+
 ---
 
 ## Folder Structure
