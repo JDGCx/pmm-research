@@ -124,7 +124,6 @@ Use this when you need to:
 
 ## Samples
 
-View: simular-ai.md
 Notion Document: https://www.notion.so/Simular-AI-3334065f433d8124a255f01e879a5d4a?source=copy_link
 
 ---
