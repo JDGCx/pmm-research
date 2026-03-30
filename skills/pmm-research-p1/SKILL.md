@@ -1,5 +1,5 @@
 ---
-name: pmm-research-phase1
+name: pmm-research-p1
 description: Run Phase 1 PMM Market and Brand Discovery using a company-agnostic framework with separated market/company research, comparative competitor analysis, and strategic synthesis. Use when given company name, website, and dynamic competitor inputs, and return structured text output with evidence-led insights including category tension, positioning summary, and competitor dominant narrative.
 ---
 
