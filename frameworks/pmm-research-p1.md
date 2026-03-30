@@ -1,5 +1,5 @@
 ---
-name: pmm-research-p1
+name: pmm-research-phase1
 description: Run Phase 1 PMM Market and Brand Discovery using a company-agnostic framework with separated market/company research, comparative competitor analysis, and strategic synthesis. Use when given company name, website, and dynamic competitor inputs, and return structured text output with evidence-led insights including category tension, positioning summary, and competitor dominant narrative.
 ---
 
@@ -33,13 +33,15 @@ Use this output order:
 7. Goals
 8. USP
 9. Positioning
-10. Competitors
-11. Key Trade-off (Category Tension)
-12. Positioning Summary
-13. Gaps
-14. Non-Ideal Customer
-15. Strategic Opportunities
-16. Sources Used
+10. Client Dominant Narrative
+11. Competitors
+12. Key Trade-off (Category Tension)
+13. Positioning Summary
+14. Gaps
+15. Non-Ideal Customer
+16. Strategic Opportunities
+17. Decision Mapping
+18. Sources Used
 
 For competitors, use one subsection per competitor in the input order with:
 - Name
@@ -84,6 +86,8 @@ Populate:
 - Challenges
 - Opportunities
 - Trends
+- Explicitly state what this means for how companies must compete differently
+
 
 Method:
 1. Identify the single most important market dynamic and state its practical implication in Market Overview.
@@ -103,6 +107,8 @@ Populate:
 - Goals
 - USP
 - Positioning
+- Define one dominant narrative for the client (3–5 words)
+- This should represent how the company wants to be perceived in the category
 
 Method:
 1. Extract explicit strategic intent and implicit strategic direction.
@@ -206,11 +212,21 @@ Before final output, verify:
 - Maintain clarity but preserve nuance where it affects strategy
 - Every insight should be usable to inform a landing page, ICP definition, or messaging angle
 - If a point cannot be turned into a clear messaging angle, it is too vague
+- If an insight could apply to any SaaS company, it is too generic and must be refined
+
+## Decision Rules
+
+- Do not remain purely descriptive. Every section must lead to a decision, trade-off, or implication.
+- Make trade-offs explicit. Avoid neutral phrasing like "this depends" without clarifying what drives the decision.
+- Clearly state where the client wins and where it loses relative to competitors.
+- Avoid generic category language. Anchor insights in specific operational or buyer-level realities.
+- Prefer sharp, opinionated synthesis over safe summaries.
 
 ### Writing Style Rules
 
 - Use simple, clear language
-- Avoid jargon (e.g. "convergence", "implication", "framework") unless necessary
+- Avoid unnecessary jargon
+- Use technical terms only when they improve clarity
 - Prefer concrete phrasing over abstract phrasing
 - Each bullet should be immediately understandable on first read
 - Write like explaining to a smart operator, not a consultant
@@ -259,6 +275,45 @@ Use different source types depending on the section being generated.
 
 - Use competitor websites as primary sources
 - Supplement with third-party perspectives if needed
+
+## Positioning
+
+- Frame positioning as a decision, not a description.
+- Define the competitive context (what alternatives exist).
+- Clearly state why the client is chosen over those alternatives.
+- Avoid vendor language. Use buyer decision language.
+
+## Category Tension
+
+- Identify the core trade-off that forces a real decision in this market.
+- Frame it as a mutually exclusive choice (buyers cannot fully optimise both sides at once).
+- Avoid generic trade-offs (e.g. "speed vs flexibility") unless grounded in specific operational context.
+- Express the tension in buyer-relevant terms (e.g. operator vs management, short-term vs long-term, control vs adaptability).
+
+## Decision Mapping
+
+### Where the Client Wins
+- Identify 3–5 scenarios where the client is the clear best choice.
+- Anchor in real triggers (e.g. urgency, constraints, org structure).
+
+### Where the Client Loses
+- Identify 3–5 scenarios where competitors are better suited.
+- Be explicit. Do not soften or generalise.
+
+### Best-Fit Customer
+- Describe the type of buyer who will see the most value.
+- Include context: size, maturity, urgency, internal capabilities.
+
+### Non-Ideal Customer
+- Identify who should NOT choose this solution.
+- Focus on structural mismatch, not just preferences.
+
+## Confidence Level
+
+- For key insights, indicate:
+  - High confidence (clear evidence)
+  - Medium (inference)
+  - Low (directional)
 
 #### General Rules
 
